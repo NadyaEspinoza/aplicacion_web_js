@@ -1,18 +1,43 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+
 <body>
+   
     <h1> Hola desde HTML</h1>
 
     <script>
-        var nombre = 'Cesar';
+       
+       //var nombre = prompt ('Dame tu nombre completo'); // prompt es para que se abre un formulario y te pregunte la variable 
       
-        var edad= 25;
+        
+        var edad= prompt ('Proporciona tu edad')
+
+        if ( edad >= 18 && edad <= 100) {
+            console.log ('Eres mayor de edad, puedes ingresar.');
+            
+        } 
+        else if 
+            (edad < 18 ) {
+            console.log ('Eres menor de edad, no se pudo ingresar.')
+        } 
+       else if (edad >= 100) {
+
+        console.log ('Error, dedad incorrecta')
+       }
+      
+        
         var cantidadhijos= 1; 
         var edadhijo= 5;
        
@@ -23,9 +48,9 @@
         var mayordeEdad= true;
         var estudios= 'Primaria';
 
-        console.log('Hola  mi nombre es' + nombre);
-        console.log(`Hola mi nombre es ${nombre} mi edad es ${edad} tengo ${cantidadhijos} hijo de ${edadhijo} años, mi hijo pesa ${pesohijo}  kg y tiene una estatura de
-        ${estaturahijo}, el estudia ${estudios}`);
+       // console.log('Hola  mi nombre es' + nombre);
+       // console.log(`Hola mi nombre es ${nombre} mi edad es ${edad} tengo ${cantidadhijos} hijo de ${edadhijo} años, mi hijo pesa ${pesohijo}  kg y tiene una estatura de
+       // ${estaturahijo}, el estudia ${estudios}`);
         
 
 
