@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+    
+    <div id="app">
+        <script>
+            
+        
+        if ( edad >= 18 && edad <= 100) {
+            console.log ('Eres mayor de edad, puedes ingresar.');
+            
+        } 
+        else if 
+            (edad < 18 ) {
+            console.log ('Eres menor de edad, no se pudo ingresar.')
+        } 
+        else if (edad >= 100) {
+        
+        console.log ('Error, dedad incorrecta')
+        }
+        
+        </script>
+            
+        <h1 v-if="edad==true">Puedes pasar</h1>
+        <h1 v-else>No puedes pasar</h1>
+        <button @click="edad()">MOSTRAR</button>
+        
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+    <script src="contador.js"></script>
+
+</body>
+</html>

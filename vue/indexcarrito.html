@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+
+
+</head>
+
+
+
+<body>
+    
+
+
+    
+    <div id="app">
+        <h1> mis compras </h1>
+        <input v-model="producto" placeholder="nombre del producto" type="text">
+        <button @click="agregar()" > Agregar </button>
+        <button @click="carrito=[]" > limpiar</button>
+
+        
+
+        <table>
+            <h1> Productos </h1>
+            <tr v-for="producto in carrito">
+              <th>{{producto}}</th>
+              
+            </tr>
+        
+          </table>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+    <script src="carrito.js"></script>
+
+   
+
+
+</body>
+</html>
